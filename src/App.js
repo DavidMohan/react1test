@@ -6,17 +6,25 @@ import Contact from './Contact'
 import Error from './Error'
 
 function App() {
+
+  // var style = {
+  //   color: '#61dafb'
+  // }
+
   return (
     <div className="App">
-        <Link to={'/'}>Home</Link>&nbsp;&nbsp;
-        <Link to={'/about'}>About</Link>&nbsp;&nbsp;
-        <Link to={'/contact'}>Contact</Link>&nbsp;&nbsp;
       <header className="App-header">
       <BrowserRouter>
         {/* <a href='/'>Home</a>&nbsp;&nbsp;
         <a href='/about'>About</a>&nbsp;&nbsp;
         <a href='/contact'>Contact</a> */}
+        <div className='links'>
+          <Link className='link' to={'/home'}>Home</Link>&nbsp;&nbsp;
+          <Link className='link' to={'/about'}>About</Link>&nbsp;&nbsp;
+          <Link className='link' to={'/contact'}>Contact</Link>&nbsp;&nbsp;
+        </div>
         <Routes>
+          <Route path='/react1test' element={<Home/>} />
           <Route path='/' element={<Home/>} />
           <Route path='/home' element={<Home/>} />
           <Route path='/about' element={<About/>} />
