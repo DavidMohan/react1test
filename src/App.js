@@ -8,7 +8,7 @@ import Error from './Error'
 function App() {
   return (
     <div className="App">
-        <Link to={'/home'}>Home</Link>&nbsp;&nbsp;
+        <Link to={'/'}>Home</Link>&nbsp;&nbsp;
         <Link to={'/about'}>About</Link>&nbsp;&nbsp;
         <Link to={'/contact'}>Contact</Link>&nbsp;&nbsp;
       <header className="App-header">
@@ -17,7 +17,7 @@ function App() {
         <a href='/about'>About</a>&nbsp;&nbsp;
         <a href='/contact'>Contact</a> */}
         <Routes>
-          <Route path='/react1test' element={<Home/>} />
+          <Route path='/' element={<Home/>} />
           <Route path='/home' element={<Home/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/contact' element={<Contact/>} />
