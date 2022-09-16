@@ -8,16 +8,16 @@ import Error from './Error'
 function App() {
   return (
     <div className="App">
+        <Link to={'/home'}>Home</Link>&nbsp;&nbsp;
+        <Link to={'/about'}>About</Link>&nbsp;&nbsp;
+        <Link to={'/contact'}>Contact</Link>&nbsp;&nbsp;
       <header className="App-header">
       <BrowserRouter>
         {/* <a href='/'>Home</a>&nbsp;&nbsp;
         <a href='/about'>About</a>&nbsp;&nbsp;
         <a href='/contact'>Contact</a> */}
-        <Link to={'/'}>Home</Link>&nbsp;&nbsp;
-        <Link to={'/about'}>About</Link>&nbsp;&nbsp;
-        <Link to={'/contact'}>Contact</Link>&nbsp;&nbsp;
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/react1test' element={<Home/>} />
           <Route path='/home' element={<Home/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/contact' element={<Contact/>} />

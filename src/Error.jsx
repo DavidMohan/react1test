@@ -6,7 +6,7 @@ function Error() {
 
   function Click() {
     if (window.confirm('Are you want to go Home??')) {
-      navigate('/')
+      navigate('/home')
     } else {
       alert('you may continue...')
     }
