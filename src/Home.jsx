@@ -5,12 +5,12 @@ function Home() {
   var navigate = useNavigate()
 
   function sayHi() {
-    alert('Hi, User')
+    alert('Hi, Bellu...')
   }
 
   return(
     <div>
-      <h1>Welcome to React #1</h1>
+      <h1>Welcome Bell Boy!</h1>
       <button onClick={sayHi}>Hi to React!</button>
     </div>
   )
